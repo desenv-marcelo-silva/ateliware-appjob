@@ -19,17 +19,10 @@ const Index = () => (
 
     <style jsx>{`
       .container {
-        display: flex;
-        justify-content: space-around;
-        align-items: stretch;
-      }
-      .item {
-        align-self: center;
-      }
-    `}</style>
-    <style global jsx>{`
-      body {
-        background: #a3a3f3;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, 100px);
       }
     `}</style>
   </div>
